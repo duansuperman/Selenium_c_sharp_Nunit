@@ -17,9 +17,14 @@ namespace FirstTestCase
             driver = new ChromeDriver();
         }
         [Test]  //Execute the test
-        public void OpenAppTest()
+        public void OpenAppTest() //Passed
         {
             driver.Navigate().GoToUrl("http://www.demoqa.com");
+        }
+        [Test]
+        public void OpenAppTest1() //Failed
+        {
+            driver.Navigate().GoToUrl("demoqa1.com"); 
         }
         [TearDown]  //Terminate the test
         public void EndTest()
