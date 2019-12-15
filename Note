@@ -1,0 +1,19 @@
+Have a lot of noctice which you need to remember:
+
+1.Install packages into project :
+Open NugetPackage via right click references and select Package manager
+	Selenium.Driver
+	Selenium.Driver.ChromeDriver
+	Selenium.Support
+2.Install Nunit framework & Nunit adapter :
+Open NugetPackage via right click references and select Package manager
+	Nunit  //using organize a framework for writing test case 
+	NunitTest3Adapter //supporting run a test case by folowing Nunit framework
+3.Create new class(equivalent to a test case)
+	Have 3 status : Setup - Started
+					Test  - Execute the test
+					TearDown - Terminate the test
+	
+	You can create more function Tests in single class file, but [Setup] method and TearDown method 
+	just run one for each running Test
+	
