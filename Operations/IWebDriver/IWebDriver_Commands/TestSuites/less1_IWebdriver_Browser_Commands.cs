@@ -18,6 +18,7 @@ namespace IWebDriver_Commands.TestSuites
 
             //Launch the ToolsQA Website
             driver.Url = "http://www.demoqa.com";
+            driver.Navigate();
         }
         [Test]
         public void TestCommands()
@@ -30,8 +31,8 @@ namespace IWebDriver_Commands.TestSuites
             int TitleLength = driver.Title.Length;
 
             // Printing Title name on Console
-            Console.WriteLine("Title of the page is : " + Title);
-
+            Console.Out.WriteLine("Title of the page is : " + Title);
+        
             // Printing Title length on console
             Console.WriteLine("Length of the Title is : " + TitleLength);
 
@@ -54,7 +55,7 @@ namespace IWebDriver_Commands.TestSuites
             int PageSourceLength = driver.PageSource.Length;
 
             // Printing Page Source on console
-            Console.WriteLine("Page Source of the page is : " + PageSource);
+           Console.WriteLine("Page Source of the page is : " + PageSource);
 
             // Printing Page SOurce length on console
             Console.WriteLine("Length of the Page Source is : " + PageSourceLength);
