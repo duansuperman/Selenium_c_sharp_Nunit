@@ -16,4 +16,6 @@ Open NugetPackage via right click references and select Package manager
 	
 	You can create more function Tests in single class file, but [Setup] method and TearDown method 
 	just run one for each running Test
-	
+
+4.Technicaly XPath :
+	Link reserch : https://www.toolsqa.com/selenium-webdriver/choosing-effective-xpath/
