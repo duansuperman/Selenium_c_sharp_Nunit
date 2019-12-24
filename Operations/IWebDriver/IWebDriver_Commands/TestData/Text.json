@@ -1,0 +1,16 @@
+{
+  "AuthenticateCmdlets": "toyota/v2",
+  "GetPowerState": "toyota/v2/Engine",
+  "PowerOff": "toyota/v2/Engine",
+  "PowerOn": "toyota/v2/Engine",
+  "Json": {
+    "j1": "value1",
+    "j2": "value2",
+    "j3": "value3"
+  },
+  "Array": [
+    { "a1": "A1" },
+    { "a2": "A2" },
+    { "a3": "A3" }
+  ]
+}
