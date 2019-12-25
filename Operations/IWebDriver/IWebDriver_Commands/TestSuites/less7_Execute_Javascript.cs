@@ -50,6 +50,14 @@ namespace IWebDriver_Commands.TestSuites
             string mail = "abcxyz@gmail.com";
             jse.ExecuteScript("arguments[0].value = arguments[1]", EnterEmail, mail);
 
+            //Get element of country dropdown
+
+            var countryDropdown = driver.FindElementById("ctl00_ContentMain_DropdownListCountry");
+
+            //Select option by executing javascript
+
+            driver.ExecuteScript("var select = arguments[0]; for(var i=0;i<select.options.length;i++){if (select.options[i].text == arguments[1]){select.options[i].selected = true; }}",countryDropdown,"India");
+
             //Get element button register
 
             var registerButton = driver.FindElementById("csharLogin");
@@ -57,7 +65,6 @@ namespace IWebDriver_Commands.TestSuites
             //Click on the register button
 
             jse.ExecuteScript("arguments[0].click()", registerButton);
-
 
         }
 
