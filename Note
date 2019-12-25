@@ -23,4 +23,16 @@ Open NugetPackage via right click references and select Package manager
 	Link reserch : https://www.toolsqa.com/selenium-webdriver/choosing-effective-xpath/
 
 5.Read data from json file:
+	
+	To read data from json file in c#, require to install package Newtonsoft.json
 	https://social.msdn.microsoft.com/Forums/en-US/525ff8f2-13f5-4602-bce3-78b909cadedb/how-to-read-and-write-a-json-file-in-c?forum=csharpgeneral
+	
+6.Some notes when interacting with checkbox & radio button :
+
+	In alot of case, you can't interact with checkbox & radio button, 
+	so using using javascript is effective method for resolving this problem
+	
+	example: driver.ExecuteJavascript("javascript command")
+	
+	Reference documents :
+		https://www.c-sharpcorner.com/article/execution-of-selenium-web-driver-using-c-sharp-javascript/
