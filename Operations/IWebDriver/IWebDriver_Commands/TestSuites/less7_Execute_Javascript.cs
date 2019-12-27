@@ -60,11 +60,18 @@ namespace IWebDriver_Commands.TestSuites
 
             //Get element button register
 
-            var registerButton = driver.FindElementById("csharLogin");
+            var registerButton = driver.FindElementById("ctl00_ContentMain_ButtonSave");
 
             //Click on the register button
 
             jse.ExecuteScript("arguments[0].click()", registerButton);
+
+        }
+
+        [Test]
+
+        public void CompleteExample()
+        {
 
         }
 

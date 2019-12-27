@@ -69,6 +69,7 @@
     <Compile Include="TestSuites\less5_Read_Json_file.cs" />
     <Compile Include="TestSuites\less6_CheckBox_Radio_Operations.cs" />
     <Compile Include="TestSuites\less7_Execute_Javascript.cs" />
+    <Compile Include="TestSuites\less8_Dropdown_MultipleSelecting.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
