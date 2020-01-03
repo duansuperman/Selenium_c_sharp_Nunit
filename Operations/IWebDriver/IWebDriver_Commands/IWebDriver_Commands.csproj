@@ -70,6 +70,7 @@
     <Compile Include="TestSuites\less6_CheckBox_Radio_Operations.cs" />
     <Compile Include="TestSuites\less7_Execute_Javascript.cs" />
     <Compile Include="TestSuites\less8_Dropdown_MultipleSelecting.cs" />
+    <Compile Include="TestSuites\less9_Handle_Dynamic_Webtables.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
