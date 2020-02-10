@@ -63,6 +63,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\JsonDriver.cs" />
     <Compile Include="TestSuites\less10_Handle_Alert_Popup_Box.cs" />
+    <Compile Include="TestSuites\less11_Handle_Multi_Windows.cs" />
+    <Compile Include="TestSuites\less13_Implicit_Wait.cs" />
     <Compile Include="TestSuites\less1_IWebdriver_Browser_Commands.cs" />
     <Compile Include="TestSuites\less2_Navigation.cs" />
     <Compile Include="TestSuites\less3_WebElement_Commands.cs" />
