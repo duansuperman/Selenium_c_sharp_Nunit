@@ -36,6 +36,8 @@ Open NugetPackage via right click references and select Package manager
 	
 	Reference documents :
 		https://www.c-sharpcorner.com/article/execution-of-selenium-web-driver-using-c-sharp-javascript/
+7. Data-Driven Testing :
+	Excel (using Dapper)
 
 
 Important Reference :
