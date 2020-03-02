@@ -36,6 +36,8 @@ Open NugetPackage via right click references and select Package manager
 	
 	Reference documents :
 		https://www.c-sharpcorner.com/article/execution-of-selenium-web-driver-using-c-sharp-javascript/
+7. Data-Driven Testing :
+	Excel (using Dapper)
 
 
 Important Reference :
@@ -43,7 +45,10 @@ Important Reference :
 	
 Testing API : 
 	https://www.youtube.com/channel/UC4rLgy4F43oG0sUQFn-ijpQ/videos
+<<<<<<< HEAD
 	
 Page to practice testing : https://testproject.io/
 
 https://blog.testproject.io/2018/12/18/net-core-test-automation-selenium-page-object-page-factory/
+=======
+>>>>>>> ffff2008db3d139067b44659b23ebbd579b35346
