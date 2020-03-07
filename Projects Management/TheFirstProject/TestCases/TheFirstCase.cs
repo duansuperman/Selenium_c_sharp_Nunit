@@ -42,21 +42,12 @@ namespace TheFirstProject
             .ClickLogin();
             Thread.Sleep(3000);
 
-            //Whether Login function haved verified sucessfully
+            //Validate Login function haved verified sucessfully
             Assert.IsTrue(driver.Url.Contains("dashboard"));
-           
-            
-        }
-
-        [Test]
-
-        public void TestCreateNewPromotionCode()
-        {
             
         }
 
         [TearDown]
-
         public void End()
         {
            driver.Quit();

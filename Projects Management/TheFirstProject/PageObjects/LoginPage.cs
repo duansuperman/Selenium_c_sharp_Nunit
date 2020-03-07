@@ -12,31 +12,25 @@ namespace TheFirstProject.PageObjects
     {
 
 
-       // private IWebDriver driver;
+       // Webelements in login page
 
         [FindsBy(How = How.XPath, Using = ".//input[@type=\"email\"]")]
         [CacheLookup]
-
         private IWebElement email { get; set; }
 
         [FindsBy(How = How.XPath, Using = ".//input[@type=\"password\"]")]
         [CacheLookup]
-
         private IWebElement password { get; set; }
 
         [FindsBy(How = How.XPath, Using = ".//button[@type=\"submit\"]")]
         [CacheLookup]
-
         private IWebElement login { get; set; }
 
         [FindsBy(How = How.XPath, Using = ".//label[@class='fancy-checkbox element-left']/span")]
-        [CacheLookup]
-
         private IWebElement remember { get; set; }
 
         [FindsBy(How=How.XPath,Using = ".//span[@class='helper-text m-b-10']/a")]
         [CacheLookup]
-
         private IWebElement forgotPassword {get;set;}
 
         [Obsolete]
