@@ -12,7 +12,7 @@ namespace TheFirstProject.TestDataAccess.Driver
 {
     class LoginDataDriver
     {
-        public static string k = "abc";
+        //get connection string
         public static string getConnectionString()
         {
             string loginData_Path = ConfigurationManager.ConnectionStrings["LoginData_Path"].ConnectionString;
@@ -20,11 +20,13 @@ namespace TheFirstProject.TestDataAccess.Driver
             return strCon;
         }
 
+        //get connection
         public static OleDbConnection getConnection()
         {
             return new OleDbConnection(getConnectionString());
         }
 
+        //get data by key name
         public static LoginData GetTestData(string keyName)
         {
             using (OleDbConnection connection = getConnection())

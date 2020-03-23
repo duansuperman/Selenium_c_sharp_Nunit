@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TheFirstProject.Extensions;
 
 namespace TheFirstProject.PageObjects
 {
@@ -46,19 +47,19 @@ namespace TheFirstProject.PageObjects
 
         public LoginPage InputEmail(string mail)
         {
-            email.SendKeys(mail);
+            email.EnterText(mail,"Email");
             return this;
         }
 
         public LoginPage InputPassword(string pass)
         {
-            password.SendKeys(pass);
+            password.EnterText(pass, "Password");
             return this;
         }
 
         public LoginPage ClickRemember()
         {
-            remember.Click();
+            remember.ClickOnIt("Remember button");
             return this;
         }
 

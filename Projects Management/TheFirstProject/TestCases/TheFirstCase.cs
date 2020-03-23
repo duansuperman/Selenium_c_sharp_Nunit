@@ -11,19 +11,20 @@ using System.Threading;
 using System.Threading.Tasks;
 using TheFirstProject.PageObjects;
 using TheFirstProject.TestDataAccess.Driver;
+using TheFirstProject.WrapperFactory;
 
 namespace TheFirstProject
 {
     public class TheFirstCase
     {
 
-        ChromeDriver driver;
+        IWebDriver driver;
 
         [SetUp]
 
         public void Initialize()
         {
-            driver = new ChromeDriver();
+            driver = (ChromeDriver) BrowserFactory.InitialBrowser("chrome");
             driver.Url = ConfigurationManager.AppSettings["Login_Url"];
         }
 
@@ -32,7 +33,7 @@ namespace TheFirstProject
         public void TestLogin()
         {
             //Initialize LoginPage object 
-            LoginPage loginPage = new LoginPage(driver);
+            LoginPage loginPage = Page.Login(driver);
 
             var loginTest = LoginDataDriver.GetTestData("LoginTest");
 
@@ -43,7 +44,7 @@ namespace TheFirstProject
             Thread.Sleep(3000);
 
             //Validate Login function haved verified sucessfully
-            Assert.IsTrue(driver.Url.Contains("dashboard"));
+            Assert.IsTrue(driver.Url.Contains("user-admin"));
             
         }
 
